@@ -1,0 +1,707 @@
+export type Lang = "zh" | "ko" | "en";
+
+export const translations = {
+  zh: {
+    navbar: {
+      about: "关于我们",
+      fitness: "运动项目",
+      itinerary: "行程路线",
+      contact: "预约咨询",
+      book: "立即预约",
+    },
+    guide: {
+      sectionTag: "认识你的陪同",
+      sectionTitle: "专业本地陪同团队",
+      sectionSubtitle: "每位陪同都在首尔生活多年，拥有对这座城市的深度了解。我们不是在执行标准流程——而是在分享我们真正热爱的生活方式。",
+      guides: [
+        {
+          name: "智元 Jiwon",
+          role: "首席陪同 · 本地文化 & 健身体验",
+          location: "首尔 · 延世大学 化工生命工学系 在读",
+          bio: "大家好，我是智元！我热爱为来韩旅行的朋友创造有意义的本地体验。我帮助旅行者通过美食、地道场所和与当地人共享的美好时光，真正融入韩国的日常文化。我的目标是让每一次体验都感觉是专属于你的、真实的、令人难忘的。",
+          tags: ["本地文化体验", "美食探索", "健身陪同", "个性化方案", "中文全程服务"],
+          stats: [
+            { value: "延世大学", label: "化工生命工学系 在读" },
+            { value: "400+", label: "陪同次数" },
+            { value: "中 · 韩 · 英", label: "语言能力" },
+          ],
+          philosophy: "\"最好的旅行体验来自真实的连接——不是走马观花的景点打卡，而是真正融入当地生活的每一个瞬间。\"",
+        },
+      ],
+      credentialsTitle: "资质与背景",
+      credentials: [
+        { icon: "🎓", label: "延世大学 在读", desc: "延世大学化工生命工学系在读，兼顾学业与陪同服务" },
+        { icon: "🗣️", label: "中文母语级服务", desc: "全程中文沟通，无语言障碍，自然流畅" },
+        { icon: "📍", label: "首尔深度本地知识", desc: "深度了解首尔日常生活，带你探索非旅游视角的真实首尔" },
+        { icon: "✨", label: "个性化体验设计", desc: "根据每位旅行者的喜好，量身定制专属体验内容" },
+      ],
+    },
+    hero: {
+      tagline: "像朋友般轻松 · 专属于你的定制陪同",
+      title: "韩国",
+      subtitle: "首尔本地陪同带领来韩中国旅行者一同探索——没有导游的距离感，有朋友般的温度，每一程都贴合你的节奏与目标",
+      cta: "立即预约",
+      thumbnails: [
+        { label1: "精品健身", label2: "私教陪练" },
+        { label1: "登山探险", label2: "韩国名峰" },
+        { label1: "小��子同行", label2: "深度体验" },
+        { label1: "城市跑步", label2: "夜间路跑" },
+      ],
+    },
+    about: {
+      sectionTitle: "不是旅行团，是专属陪同",
+      p1parts: [
+        "我们提供的不是标准化的旅游产品，而是",
+        "像朋友般自在、专属定制的本地陪同体验",
+        "——有首尔本地陪同带领，有同频的旅行伙伴同行，将韩国旅行与运动健身深度结合。",
+      ],
+      p2parts: [
+        "我们注重的是",
+        "你的节奏、你的目标、你的舒适感",
+        "——无论是训练强度、爬山步调还是行程安排，都会根据你的实际状态灵活调整。",
+      ],
+      p3parts: [
+        "没有导游的距离感，没有大团的束缚感，有的是",
+        "轻松自在的氛围与贴心的个人化关注",
+        "，让你在韩国的每一天都值得记忆。",
+      ],
+      stats: [
+        { number: "500+", label: "服务旅行者" },
+        { number: "3", label: "城市运动路线" },
+        { number: "98%", label: "客户满意度" },
+        { number: "5★", label: "精品服务评级" },
+      ],
+    },
+    localFriend: {
+      sectionTitle: "像朋友般的温度，专属定制的体验",
+      subtitle: "旅行团给你标准流程，我们给你贴合自己的专属陪同",
+      notTour: "旅行团的方式",
+      yeounWay: "YEOUN 的方式",
+      comparisons: [
+        {
+          tour: "几十人大团，固定流程，无法调整",
+          friend: "小圈子同行，根据你的状态与目标实时调整安排",
+        },
+        {
+          tour: "导游与客人之间有明显距离感",
+          friend: "像朋友般轻松沟通，随时表达需求，全程中文服务",
+        },
+        {
+          tour: "催着赶下一站，没有喘息空间",
+          friend: "你的节奏优先——想多停留就多停留，想调整强度随时说",
+        },
+        {
+          tour: "行程结束即结束，缺乏个人关注",
+          friend: "全程关注你的状态与感受，运动完一起复盘、一起用餐",
+        },
+      ],
+      moments: [
+        {
+          icon: "🏋️",
+          title: "训练计划专属定制",
+          desc: "根据你的体能水平、健身目标和在韩时间，制定最适合你的训练方案——不是套用模板，是真正为你设计",
+        },
+        {
+          icon: "⛰️",
+          title: "按你的步调，不催不赶",
+          desc: "爬山的节奏完全跟随你——体力好时可以加速冲顶，需要休息时就停下来，没有任何压力",
+        },
+        {
+          icon: "🌙",
+          title: "运动后的真实体验",
+          desc: "陪同不只是运动时间——运动结束后一起去本地人常去的地方用餐、放松，感受首尔真实的生活节奏",
+        },
+        {
+          icon: "💬",
+          title: "全程贴心沟通",
+          desc: "中文全程服务，任何关于训练、行程或首尔生活的问题都可以随时提出——你的舒适感是我们最在意的事",
+        },
+      ],
+    },
+    fitness: {
+      sectionTitle: "运动项目",
+      subtitle: "以下运动项目可单独预约，也可与行程自由组合。每个项目都会根据你的体能状态与目标灵活调整，而非套用固定模板。",
+      bookBtn: "预约此项目 →",
+      programs: [
+        {
+          tag: "STRENGTH",
+          tagLocal: "力量训练",
+          title: "精品健身房\n专属训练课",
+          desc: "在首尔优质健身房，由专业中文陪同全程指导，根据你的目标与当日状态制定训练内容。增肌、减脂或体能提升，计划随时可以调整。",
+          highlights: ["个人目标优先，非固定套餐", "中文全程陪同指导", "首尔精品健身房", "强度与内容灵活调整"],
+        },
+        {
+          tag: "HIKING",
+          tagLocal: "登山探险",
+          title: "韩国名峰\n专属陪同登山",
+          desc: "北汉山、汉拿山、智异山——陪同全程随行，步调完全跟随你的节奏。不急于登顶，而是让你在舒适的状态下完成挑战，感受韩国山岳的真实魅力。",
+          highlights: ["节奏完全由你决定", "陪同全程随行不催促", "登顶后共同复盘与休憩", "下山后推荐本地餐食"],
+        },
+        {
+          tag: "RUNNING",
+          tagLocal: "城市跑步",
+          title: "汉江边上\n夜间路跑陪同",
+          desc: "傍晚汉江路跑，陪同根据你的配速灵活调整——无论是轻松慢跑还是挑战配速，都会全程陪伴。跑后在汉江边放松，感受首尔夜晚的真实节奏。",
+          highlights: ["配速与距离完全按你来", "不只是跑步，是首尔体验", "江边跑后放松时光", "融入首尔本地生活节奏"],
+        },
+      ],
+      bottomCards: [
+        { label: "精品健身房", sub: "专属定制训练计划" },
+        { label: "一对一陪同", sub: "贴合你的节奏与目标" },
+        { label: "登山陪同", sub: "按你步调，全程随行" },
+      ],
+    },
+    services: {
+      sectionTitle: "我们提供的服务",
+      items: [
+        { icon: "🏋️", title: "专属健身陪同", desc: "根据你的目标与体能，制定个人化训练方案，在首尔优质健身房全程中文指导，像有私教般的专属体验" },
+        { icon: "⛰️", title: "登山全程陪同", desc: "按你的节奏全程陪同，不催不赶。专注于让你在舒适状态下完成挑战，而非追求速度" },
+        { icon: "🏃", title: "城市跑步陪同", desc: "傍晚汉江路跑，配速与距离完全根据你来。跑后一同在江边放松，感受首尔本地人的夜晚节奏" },
+        { icon: "🧭", title: "本地深度体验", desc: "陪同带你进入首尔真实的本地生活——非旅游景点，是当地人才了解的健身场所、街区与饮食文化" },
+        { icon: "🍜", title: "运动后本地餐食", desc: "训练或登山结束后，推荐并陪同前往首尔本地人喜爱的餐厅，让运动后的用餐成为体验的一部分" },
+        { icon: "💬", title: "全程中文贴心沟通", desc: "训练建议、行程调整、首尔生活问题——全程中文服务，任何需求随时可以提出，你的舒适感始终是优先考量" },
+      ],
+    },
+    itinerary: {
+      sectionTitle: "行程路线",
+      subtitle: "以下为参考路线，实际行程会根据你的到访时间、体能状态与偏好灵活定制，没有一成不变的固定安排。",
+      comingSoon: "COMING SOON",
+      stops: [
+        {
+          days: "首尔中心",
+          city: "首尔",
+          description: "北汉山专属陪同登山、精品健身房定制训练、傍晚汉江路跑。运动后推荐本地用餐，按你的节奏深度体验首尔两日。",
+          highlights: ["北汉山陪同登山", "精品健身房训练", "汉江夜跑陪同"],
+        },
+        {
+          days: "即将推出",
+          city: "釜山",
+          description: "海云台海边晨跑、金井山专属陪同、甘川文化村漫步。釜山节奏更为舒缓，适合在放松中深度体验。",
+          highlights: ["海云台晨跑陪同", "金井山登山", "本地海鲜餐食"],
+        },
+        {
+          days: "即将推出",
+          city: "济州岛",
+          description: "汉拿山是韩国登山的终极体验，海拔1950米。专属陪同全程随行，按你的步调完成挑战，山顶的视野令人终身难忘。",
+          highlights: ["汉拿山专属陪同登顶", "海边骑行体验", "济州岛本地深度探索"],
+        },
+      ],
+    },
+    experience: {
+      gym: { tag: "专属训练", title: "定制化健身陪同体验", desc: "不是固定课程，是根据你的目标与状态实时调整的专属训练方案" },
+      hiking: { tag: "登山陪同", title: "按你的节奏，全程相伴" },
+      trainer: { tag: "专属陪同", title: "像朋友般轻松，如私教般专业" },
+      quote: "\"我们的陪同没有导游的距离感，也没有私教课的压迫感——有的是像朋友般自在的沟通氛围，以及真正围绕你而设计的专属体验。\"",
+      quoteAuthor: "— YEOUN",
+    },
+    contact: {
+      tagline: "开始你的专属体验",
+      title: "想在首尔\n开启专属健康之旅？",
+      desc: "通过微信与我们联系，告诉我们你的到访时间与目标，我们将为你定制最适合的陪同方案。",
+      contactItems: [
+        { icon: "💬", label: "微信（最快）", value: "JeSsiE_uKr" },
+        { icon: "📧", label: "邮箱", value: "tnsrsmut1@naver.com" },
+        { icon: "📞", label: "电话（韩国）", value: "+82 010-7353-6514" },
+        { icon: "📞", label: "电话（中国）", value: "+86 138-2879-4965" },
+      ],
+      formTitle: "预约咨询",
+      namePlaceholder: "您的姓名",
+      wechatPlaceholder: "微信号（主要联系方式）",
+      datesPlaceholder: "计划到访首尔的时间？",
+      guestsPlaceholder: "同行人数？",
+      messagePlaceholder: "您的运动偏好与目标？（健身、登山、跑步等）",
+      selectLabel: "感兴趣的项目",
+      options: [
+        { value: "精品健身", label: "健身房专属训练" },
+        { value: "登山陪同", label: "北汉山登山陪同" },
+        { value: "夜跑陪同", label: "汉江夜跑陪同" },
+        { value: "全部体验", label: "希望体验全部项目" },
+        { value: "咨询了解", label: "先了解更多详情" },
+      ],
+      submit: "发送预约申请",
+      successTitle: "收到您的申请！",
+      successDesc: "我们将在24小时内通过微信与您联系，为您定制专属方案。",
+    },
+    footer: {
+      links: [
+        { label: "关于我们", href: "#about" },
+        { label: "运动项目", href: "#services" },
+        { label: "行程路线", href: "#itinerary" },
+        { label: "预约咨询", href: "#contact" },
+      ],
+      book: "立即预约",
+      copyright: "© 2025 YEOUN. All rights reserved.",
+      tagline: "专属陪同 · 像朋友般的温度 · 深度探索韩国",
+    },
+  },
+
+  ko: {
+    navbar: {
+      about: "소개",
+      fitness: "운동 프로그램",
+      itinerary: "코스 안내",
+      contact: "예약 문의",
+      book: "지금 예약",
+    },
+    guide: {
+      sectionTag: "당신의 동행자 소개",
+      sectionTitle: "전문 로컬 동행자 팀",
+      sectionSubtitle: "각 동행자는 서울에 오래 거주하며 도시에 대한 깊은 이해를 가지고 있습니다. 표준 프로세스가 아닌, 진심으로 사랑하는 라이프스타일을 함께 나눕니다.",
+      guides: [
+        {
+          name: "Jiwon",
+          role: "주 동행자 · 현지 문화 & 웰니스 체험",
+          location: "서울 · 연세대학교 화공생명공학부 재학 중",
+          bio: "안녕하세요, 저는 지원이에요! 한국을 방문하는 분들에게 진정성 있는 현지 경험을 만들어드리는 것을 정말 좋아해요. 음식, 장소, 그리고 현지인들과 함께하는 소중한 순간들을 통해 여행자들이 한국의 일상 문화와 자연스럽게 연결될 수 있도록 도와드립니다. 제 목표는 모든 경험이 오직 당신만을 위한, 진실되고 평생 기억에 남는 것이 되도록 하는 것입니다.",
+          tags: ["현지 문화 체험", "음식 탐험", "운동 동행", "개인화된 계획", "중국어 서비스"],
+          stats: [
+            { value: "연세대학교", label: "화공생명공학부 재학 중" },
+            { value: "400+", label: "동행 횟수" },
+            { value: "중국어 · 한국어 · 영어", label: "언어 능력" },
+          ],
+          philosophy: "\"최고의 여행 경험은 진정한 연결에서 나온다고 믿어요 — 관광지 사진보다 현지인들과 함께하는 순간들이 더 오래 기억에 남아요.\"",
+        },
+      ],
+      credentialsTitle: "자격 및 배경",
+      credentials: [
+        { icon: "🎓", label: "연세대학교 재학 중", desc: "화공생명공학부 재학 중, 학업과 동행 서비스를 병행" },
+        { icon: "🗣️", label: "중국어 모국어 수준", desc: "중국어로 전체 소통, 언어 장벽 없는 자연스러운 동행" },
+        { icon: "📍", label: "서울 현지 생활 밀착", desc: "관광지 너머의 진짜 서울을 안내하는 깊은 현지 지식" },
+        { icon: "✨", label: "개인화 체험 설계", desc: "여행자의 취향에 맞춰 오직 당신만을 위한 체험을 구성" },
+      ],
+    },
+    hero: {
+      tagline: "친구처럼 편안하게 · 나만을 위한 맞춤 동행",
+      title: "한국",
+      subtitle: "서울 로컬 동행과 함께하는 소그룹 웰니스 여행 — 딱딱한 가이드의 거리감 없이, 내 페이스와 목표에 맞춰 조율되는 개인화된 경험",
+      cta: "지금 예약하기",
+      thumbnails: [
+        { label1: "맞춤 헬스", label2: "개인화 트레이닝" },
+        { label1: "등산 동행", label2: "한국 명산" },
+        { label1: "소그룹", label2: "깊이 있는 경험" },
+        { label1: "도심 러닝", label2: "한강 야간 코스" },
+      ],
+    },
+    about: {
+      sectionTitle: "패키지 투어가 아닌, 전담 맞춤 동행",
+      p1parts: [
+        "저희가 제공하는 건 표준화된 여행 상품이 아니에요. ",
+        "친구처럼 편안한 분위기 속에서, 나만을 위해 조율되는 로컬 동행 경험",
+        " — 서울 로컬 동행자와 함께, 비슷한 관심사를 가진 소그룹이 한국 여행과 운동을 결합해요.",
+      ],
+      p2parts: [
+        "중요한 건",
+        "당신의 페이스, 당신의 목표, 당신의 편안함",
+        " — 트레이닝 강도, 등산 속도, 일정 구성 모두 실제 컨디션에 맞게 유연하게 조율돼요.",
+      ],
+      p3parts: [
+        "가이드의 거리감도, 단체 투어의 답답함도 없이. ",
+        "편안한 소통과 세심한 개인화된 관심",
+        "으로 서울에서의 매 하루가 기억에 남는 경험이 되도록 함께해요.",
+      ],
+      stats: [
+        { number: "500+", label: "함께한 여행자" },
+        { number: "3", label: "도시 운동 코스" },
+        { number: "98%", label: "만족도" },
+        { number: "5★", label: "프리미엄 서비스" },
+      ],
+    },
+    localFriend: {
+      sectionTitle: "친구 같은 편안함, 나만의 맞춤 경험",
+      subtitle: "패키지 투어는 표준 일정을 드려요. 저희는 당신에게 맞는 전담 동행을 드려요.",
+      notTour: "패키지 투어 방식",
+      yeounWay: "YEOUN 방식",
+      comparisons: [
+        {
+          tour: "수십 명 대형 그룹, 고정 일정, 조율 불가",
+          friend: "소그룹 동행, 컨디션과 목표에 따라 실시간 조율",
+        },
+        {
+          tour: "가이드와 여행자 사이의 명확한 거리감",
+          friend: "친구처럼 편안한 소통, 언제든 편하게 의견 전달 가능",
+        },
+        {
+          tour: "다음 장소로 재촉, 개인 배려 없음",
+          friend: "내 페이스가 우선 — 더 머물고 싶으면 머물고, 강도 조절도 언제든지",
+        },
+        {
+          tour: "일정 종료 후 끝, 개인적 관심 없음",
+          friend: "운동 내내 컨디션 체크, 끝나고 함께 식사하며 자연스럽게 마무리",
+        },
+      ],
+      moments: [
+        {
+          icon: "🏋️",
+          title: "나만을 위한 트레이닝 플랜",
+          desc: "체력 수준, 목표, 방문 기간에 맞춰 설계된 맞춤 훈련 — 템플릿 적용이 아닌, 진짜 나를 위한 구성",
+        },
+        {
+          icon: "⛰️",
+          title: "내 속도로, 재촉 없이",
+          desc: "등산 페이스는 전적으로 당신 따라 — 컨디션이 좋으면 속도를 내고, 쉬고 싶으면 멈춰요. 어떤 압박도 없어요.",
+        },
+        {
+          icon: "🌙",
+          title: "운동 후 진짜 현지 경험",
+          desc: "동행은 운동 시간만이 아니에요 — 끝나고 현지인이 가는 곳에서 함께 식사하고 쉬면서 서울의 진짜 일상을 느껴요",
+        },
+        {
+          icon: "💬",
+          title: "언제든 편하게 소통",
+          desc: "트레이닝, 일정, 서울 생활 궁금한 것 모두 편하게 물어보세요 — 당신의 편안함이 저희의 최우선이에요",
+        },
+      ],
+    },
+    fitness: {
+      sectionTitle: "운동 프로그램",
+      subtitle: "아래 프로그램은 단독 예약 또는 여행 일정과 자유롭게 조합 가능해요. 모든 프로그램은 고정된 템플릿이 아닌, 당신의 컨디션과 목표에 맞게 유연하게 구성돼요.",
+      bookBtn: "이 프로그램 예약 →",
+      programs: [
+        {
+          tag: "STRENGTH",
+          tagLocal: "맞춤 트레이닝",
+          title: "프리미엄 헬스장\n개인화 트레이닝",
+          desc: "서울 우수 헬스장에서 전담 동행과 함께하는 맞춤 훈련. 목표와 당일 컨디션에 따라 내용을 조율해요. 근력, 체지방 감량, 체력 향상 — 어떤 목표든 나에게 맞게 설계돼요.",
+          highlights: ["개인 목표 기반 맞춤 구성", "전담 동행 중국어 지원", "서울 프리미엄 헬스장", "강도와 내용 유연하게 조정"],
+        },
+        {
+          tag: "HIKING",
+          tagLocal: "등산 동행",
+          title: "한국 명산\n전담 등산 동행",
+          desc: "북한산, 한라산, 지리산 — 전담 동행이 내 페이스에 맞춰 함께해요. 정상 도달이 목표가 아니라, 당신이 편안한 상태에서 도전을 완성하는 것이 목표예요.",
+          highlights: ["페이스 전적으로 당신 중심", "재촉 없는 전담 동행", "정상 후 함께 휴식과 복기", "하산 후 현지 맛집 안내"],
+        },
+        {
+          tag: "RUNNING",
+          tagLocal: "러닝 동행",
+          title: "한강에서\n야간 러닝 동행",
+          desc: "저녁 한강 러닝, 동행이 당신의 페이스에 맞춰 유연하게 함께해요. 가벼운 조깅이든 페이스 챌린지든, 끝나고 한강변에서의 여유로운 마무리까지 동행해요.",
+          highlights: ["페이스와 거리 완전 맞춤", "러닝 그 이상의 서울 경험", "한강변 러닝 후 여유 시간", "현지인의 서울 리듬 체험"],
+        },
+      ],
+      bottomCards: [
+        { label: "프리미엄 헬스장", sub: "개인화 트레이닝 플랜" },
+        { label: "전담 1:1 동행", sub: "내 페이스와 목표 중심" },
+        { label: "등산 동행", sub: "재촉 없이, 내 속도로" },
+      ],
+    },
+    services: {
+      sectionTitle: "저희가 함께하는 것들",
+      items: [
+        { icon: "🏋️", title: "개인화 헬스 동행", desc: "목표와 체력에 맞는 맞춤 훈련 플랜, 서울 우수 헬스장에서 중국어 전담 동행. 개인 트레이너 같은 전담 경험." },
+        { icon: "⛰️", title: "등산 전담 동행", desc: "내 속도에 맞춰 전담 동행. 재촉 없이, 편안한 상태에서 도전을 완성하는 데 집중해요." },
+        { icon: "🏃", title: "러닝 동행", desc: "저녁 한강 러닝, 페이스와 거리는 완전히 당신 중심. 끝나고 현지인처럼 한강변에서 여유롭게 마무리해요." },
+        { icon: "🧭", title: "로컬 심층 경험", desc: "동행이 안내하는 서울의 진짜 모습 — 관광지가 아닌, 현지인이 아는 헬스장·동네·식문화를 함께 경험해요." },
+        { icon: "🍜", title: "운동 후 현지 식사", desc: "트레이닝이나 등산 후, 서울 현지인이 즐기는 맛집을 추천하고 함께 방문해요. 운동 마무리까지 함께해요." },
+        { icon: "💬", title: "중국어 전담 소통", desc: "트레이닝 조언, 일정 조율, 서울 생활 정보 — 모두 중국어로 편하게. 당신의 편안함이 저희의 최우선이에요." },
+      ],
+    },
+    itinerary: {
+      sectionTitle: "코스 안내",
+      subtitle: "아래는 참고 코스예요. 실제 일정은 방문 시기, 컨디션, 선호도에 맞게 유연하게 맞춤 구성돼요.",
+      comingSoon: "COMING SOON",
+      stops: [
+        {
+          days: "서울 중심",
+          city: "서울",
+          description: "북한산 전담 등산 동행, 프리미엄 헬스장 맞춤 훈련, 저녁 한강 러닝. 운동 후 현지 맛집에서 마무리 — 내 페이스로 서울을 깊이 경험하는 2일.",
+          highlights: ["북한산 전담 동행", "맞춤 헬스 트레이닝", "한강 야간 러닝"],
+        },
+        {
+          days: "곧 만나요",
+          city: "부산",
+          description: "해운대 해변 아침 러닝, 금정산 전담 동행, 감천 문화마을 산책. 부산의 여유로운 리듬이 깊은 경험을 더해줘요.",
+          highlights: ["해운대 아침 러닝", "금정산 동행 등산", "현지 해산물 식사"],
+        },
+        {
+          days: "곧 만나요",
+          city: "제주도",
+          description: "한라산은 해발 1950m, 한국 등산의 정수예요. 전담 동행이 당신의 페이스에 맞춰 함께 — 정상의 풍경은 평생 기억에 남아요.",
+          highlights: ["한라산 전담 동행", "해안 사이클링", "제주 로컬 경험"],
+        },
+      ],
+    },
+    experience: {
+      gym: { tag: "맞춤 트레이닝", title: "개인화된 헬스 동행 경험", desc: "고정 프로그램이 아닌, 목표와 컨디션에 맞게 실시간 조율되는 전담 트레이닝" },
+      hiking: { tag: "등산 동행", title: "내 속도로, 재촉 없이 함께" },
+      trainer: { tag: "전담 동행", title: "친구처럼 편안하게, 전담으로 함께" },
+      quote: "\"가이드의 거리감도, 단체 투어의 답답함도 없어요. 친구처럼 편안한 분위기 속에서, 온전히 당신을 위해 조율되는 경험 — 그게 YEOUN이에요.\"",
+      quoteAuthor: "— YEOUN",
+    },
+    contact: {
+      tagline: "맞춤 동행 시작하기",
+      title: "서울에서\n나만의 웰니스 여행을 시작할까요?",
+      desc: "위챗으로 연락주세요. 방문 시기와 목표를 알려주시면, 가장 적합한 동행 구성을 제안드려요.",
+      contactItems: [
+        { icon: "💬", label: "위챗 (가장 빠름)", value: "JeSsiE_uKr" },
+        { icon: "📧", label: "이메일", value: "tnsrsmut1@naver.com" },
+        { icon: "📞", label: "전화 (한국)", value: "+82 010-7353-6514" },
+        { icon: "📞", label: "전화 (중국)", value: "+86 138-2879-4965" },
+      ],
+      formTitle: "예약 상담 신청",
+      namePlaceholder: "성함",
+      wechatPlaceholder: "위챗 아이디 (주요 연락 수단)",
+      datesPlaceholder: "서울 방문 예정 시기는 언제인가요?",
+      guestsPlaceholder: "동행 인원은 몇 명인가요?",
+      messagePlaceholder: "운동 목표나 선호하는 프로그램을 알려주세요",
+      selectLabel: "관심 프로그램",
+      options: [
+        { value: "헬스 트레이닝", label: "헬스장 맞춤 트레이닝" },
+        { value: "등산 동행", label: "북한산 등산 동행" },
+        { value: "러닝 동행", label: "한강 야간 러닝 동행" },
+        { value: "전체 경험", label: "모든 프로그램 체험 희망" },
+        { value: "상담 문의", label: "먼저 자세히 알고 싶어요" },
+      ],
+      submit: "예약 신청하기",
+      successTitle: "신청이 접수되었어요!",
+      successDesc: "24시간 이내 위챗으로 연락드려 맞춤 동행 구성을 안내해드릴게요.",
+    },
+    footer: {
+      links: [
+        { label: "소개", href: "#about" },
+        { label: "운동 프로그램", href: "#services" },
+        { label: "코스 안내", href: "#itinerary" },
+        { label: "예약 문의", href: "#contact" },
+      ],
+      book: "지금 예약",
+      copyright: "© 2025 YEOUN. All rights reserved.",
+      tagline: "전담 동행 · 친구처럼 편안하게 · 나만을 위한 맞춤 경험",
+    },
+  },
+
+  en: {
+    navbar: {
+      about: "About",
+      fitness: "Programs",
+      itinerary: "Itinerary",
+      contact: "Book Now",
+      book: "Book Now",
+    },
+    guide: {
+      sectionTag: "Meet Your Companion",
+      sectionTitle: "Professional Local Companion Team",
+      sectionSubtitle: "Each companion has lived in Seoul for years with a deep understanding of the city. We're not following a standard process — we're sharing the lifestyle we truly love.",
+      guides: [
+        {
+          name: "Jiwon",
+          role: "Lead Companion · Local Culture & Wellness",
+          location: "Seoul · Yonsei University, Chemical & Biomolecular Engineering",
+          bio: "Hi, I'm Jiwon, and I love creating meaningful local experiences for people visiting Korea. I help travelers connect with everyday Korean culture — through food, places, and shared moments with locals. My goal is to make each experience feel personal, genuine, and unforgettable.",
+          tags: ["Local Culture", "Food Exploration", "Fitness Companion", "Personalized Plans", "Chinese Service"],
+          stats: [
+            { value: "Yonsei Univ.", label: "Chem. & Biomolecular Eng." },
+            { value: "400+", label: "Companion Sessions" },
+            { value: "Chinese · Korean · English", label: "Language Skills" },
+          ],
+          philosophy: "\"The best travel experiences come from genuine connection — not just ticking off landmarks, but truly living in the moment with the people around you.\"",
+        },
+      ],
+      credentialsTitle: "Credentials & Background",
+      credentials: [
+        { icon: "🎓", label: "Yonsei University", desc: "Currently enrolled in Chemical & Biomolecular Engineering while running companion services" },
+        { icon: "🗣️", label: "Native-Level Chinese", desc: "Full Chinese-language communication — no language barriers, completely natural" },
+        { icon: "📍", label: "Deep Local Seoul Knowledge", desc: "Guides you beyond the tourist trail into the real everyday Seoul" },
+        { icon: "✨", label: "Personalised Experience Design", desc: "Each itinerary is crafted around your tastes, pace, and goals" },
+      ],
+    },
+    hero: {
+      tagline: "Comfortable like a friend · Tailored entirely for you",
+      title: "KOREA",
+      subtitle: "A Seoul-based local companion leads a small group of Chinese travelers through Korea — without the formality of a guide, with the warmth of personal attention and a plan built around you",
+      cta: "Book Now",
+      thumbnails: [
+        { label1: "Tailored Training", label2: "Premium Gym" },
+        { label1: "Hiking Together", label2: "Korea's Peaks" },
+        { label1: "Small Group", label2: "Deep Experience" },
+        { label1: "City Running", label2: "Han River Night Run" },
+      ],
+    },
+    about: {
+      sectionTitle: "Not a package tour — a personalised companion experience",
+      p1parts: [
+        "We don't offer a standardised travel product. We offer ",
+        "a locally-led, personalised companion experience with the ease of a friend",
+        " — a Seoul local joins a small group of like-minded Chinese travellers to blend Korea exploration with fitness and wellness.",
+      ],
+      p2parts: [
+        "What matters to us is",
+        " your pace, your goals, your comfort",
+        " — whether it's training intensity, hiking speed, or daily scheduling, everything is adjusted in real time to match how you actually feel.",
+      ],
+      p3parts: [
+        "No guide's formality, no tour group's rigidity — just ",
+        "a relaxed atmosphere with genuine personal attention",
+        ", making every day in Seoul worth remembering.",
+      ],
+      stats: [
+        { number: "500+", label: "Travellers Served" },
+        { number: "3", label: "City Wellness Routes" },
+        { number: "98%", label: "Client Satisfaction" },
+        { number: "5★", label: "Premium Service Rating" },
+      ],
+    },
+    localFriend: {
+      sectionTitle: "The warmth of a friend. The precision of a personal plan.",
+      subtitle: "A package tour gives you a standard process. We give you a companion experience built around you.",
+      notTour: "Package Tour",
+      yeounWay: "The YEOUN Way",
+      comparisons: [
+        {
+          tour: "Dozens of people, fixed schedule, no flexibility",
+          friend: "Small group, real-time adjustments based on your condition and goals",
+        },
+        {
+          tour: "Clear distance between guide and traveller",
+          friend: "Relaxed, friend-like communication — share any preference or need at any time",
+        },
+        {
+          tour: "Always rushing to the next stop, no personal consideration",
+          friend: "Your pace comes first — want to stay longer? Stay. Need to adjust intensity? Done.",
+        },
+        {
+          tour: "Tour ends, that's it — no personal follow-through",
+          friend: "Check-ins throughout, shared meal after to round off the experience naturally",
+        },
+      ],
+      moments: [
+        {
+          icon: "🏋️",
+          title: "A training plan made for you",
+          desc: "Designed around your fitness level, goals, and length of stay — not a template applied to everyone, but a plan genuinely built for you",
+        },
+        {
+          icon: "⛰️",
+          title: "Your pace, no pressure",
+          desc: "The hiking rhythm follows you entirely — push harder when you feel strong, rest when you need it. No pressure whatsoever.",
+        },
+        {
+          icon: "🌙",
+          title: "Real local experience after the workout",
+          desc: "The companion experience doesn't stop when the exercise ends — we head to places Seoul locals actually go, closing the day with food and genuine rest",
+        },
+        {
+          icon: "💬",
+          title: "Comfortable communication throughout",
+          desc: "Chinese-language service throughout. Ask anything about training, the itinerary, or Seoul life — your comfort is always the priority",
+        },
+      ],
+    },
+    fitness: {
+      sectionTitle: "Wellness Programs",
+      subtitle: "Each program can be booked individually or combined with your itinerary. Nothing is fixed — content and intensity are always adjusted to match your actual condition and goals.",
+      bookBtn: "Book this program →",
+      programs: [
+        {
+          tag: "STRENGTH",
+          tagLocal: "Personalised Training",
+          title: "Premium Gym\nPersonalised Session",
+          desc: "Train at a quality Seoul gym with your dedicated companion. Content is tailored to your goals and condition on the day — whether that's building strength, losing fat, or improving fitness. Fully in Chinese.",
+          highlights: ["Goal-based personalised plan", "Dedicated Chinese-speaking companion", "Premium Seoul gym", "Flexible intensity and content"],
+        },
+        {
+          tag: "HIKING",
+          tagLocal: "Hiking Companion",
+          title: "Korea's Mountains\nDedicated Hiking Companion",
+          desc: "Bukhansan, Hallasan, Jirisan — your companion matches your pace throughout. The goal isn't just reaching the summit; it's completing the challenge comfortably, on your terms.",
+          highlights: ["Entirely your pace", "No rushing, dedicated companion", "Rest and debrief at the summit", "Local restaurant recommendation after"],
+        },
+        {
+          tag: "RUNNING",
+          tagLocal: "Running Companion",
+          title: "Han River\nEvening Running Companion",
+          desc: "Han River evening run, with your companion adapting to your pace. Easy jog or a pace challenge — your call. Followed by a relaxed wind-down by the river, experiencing Seoul the way locals do.",
+          highlights: ["Fully personalised pace and distance", "Running plus a Seoul experience", "Riverside cool-down time", "Real Seoul local rhythm"],
+        },
+      ],
+      bottomCards: [
+        { label: "Premium Gym", sub: "Personalised training plan" },
+        { label: "Dedicated 1:1 Companion", sub: "Built around your pace and goals" },
+        { label: "Hiking Companion", sub: "Your pace, no pressure" },
+      ],
+    },
+    services: {
+      sectionTitle: "What we offer",
+      items: [
+        { icon: "🏋️", title: "Personalised gym companion", desc: "A training plan built around your goals and fitness, at a quality Seoul gym, with dedicated Chinese-language support throughout. A personal-trainer-level experience." },
+        { icon: "⛰️", title: "Dedicated hiking companion", desc: "Matched to your pace throughout — no rushing, no pressure. The focus is helping you complete the challenge comfortably, not hitting a time target." },
+        { icon: "🏃", title: "Running companion", desc: "Han River evening run entirely at your pace. Followed by a relaxed riverside wind-down — experiencing Seoul the way locals do." },
+        { icon: "🧭", title: "Authentic local experience", desc: "Your companion brings you into the real Seoul — not tourist attractions, but the gyms, neighbourhoods, and food spots that locals actually know." },
+        { icon: "🍜", title: "Post-workout local dining", desc: "After training or hiking, your companion recommends and accompanies you to restaurants Seoul locals actually frequent. The experience doesn't stop at the workout." },
+        { icon: "💬", title: "Chinese-language companion throughout", desc: "Training advice, schedule adjustments, Seoul life tips — all in Chinese, at ease. Your comfort is always our first consideration." },
+      ],
+    },
+    itinerary: {
+      sectionTitle: "Sample Itinerary",
+      subtitle: "The routes below are references. Your actual itinerary is flexibly personalised based on your travel dates, condition, and preferences.",
+      comingSoon: "COMING SOON",
+      stops: [
+        {
+          days: "Seoul Base",
+          city: "Seoul",
+          description: "Dedicated Bukhansan hiking companion, personalised gym training, evening Han River run. Followed by a local dinner — two days of Seoul experienced at your own pace, in depth.",
+          highlights: ["Bukhansan Dedicated Companion", "Personalised Gym Training", "Han River Night Run"],
+        },
+        {
+          days: "Coming Soon",
+          city: "Busan",
+          description: "Morning run at Haeundae Beach, dedicated Geumjeongsan hiking companion, a wander through Gamcheon. Busan's slower pace makes for a more relaxed, deeper experience.",
+          highlights: ["Haeundae Morning Run", "Geumjeongsan Hiking Companion", "Local Seafood Dining"],
+        },
+        {
+          days: "Coming Soon",
+          city: "Jeju",
+          description: "Hallasan at 1,950m is Korea's defining hiking experience. Your companion stays with you at your pace throughout — the view from the summit is something that stays with you.",
+          highlights: ["Hallasan Dedicated Companion", "Coastal Cycling", "Jeju Local Experience"],
+        },
+      ],
+    },
+    experience: {
+      gym: { tag: "Personalised Training", title: "A tailored gym companion experience", desc: "Not a fixed program — content adjusted in real time to your goals and condition on the day" },
+      hiking: { tag: "Hiking Companion", title: "Your pace, no pressure, all the way" },
+      trainer: { tag: "Dedicated Companion", title: "Friend-like ease. Personal-level attention." },
+      quote: "\"None of the formality of a guide, none of the rigidity of a group tour — just a relaxed, comfortable atmosphere with an experience genuinely built around you. That's what YEOUN is.\"",
+      quoteAuthor: "— YEOUN",
+    },
+    contact: {
+      tagline: "Begin your personalised experience",
+      title: "Ready to start your\nwellness journey in Seoul?",
+      desc: "Reach out via WeChat. Share your travel dates and goals, and we'll put together a companion plan tailored specifically for you.",
+      contactItems: [
+        { icon: "💬", label: "WeChat (fastest)", value: "JeSsiE_uKr" },
+        { icon: "📧", label: "Email", value: "tnsrsmut1@naver.com" },
+        { icon: "📞", label: "Phone (Korea)", value: "+82 010-7353-6514" },
+        { icon: "📞", label: "Phone (China)", value: "+86 138-2879-4965" },
+      ],
+      formTitle: "Book a consultation",
+      namePlaceholder: "Your name",
+      wechatPlaceholder: "WeChat ID (primary contact method)",
+      datesPlaceholder: "When are you planning to visit Seoul?",
+      guestsPlaceholder: "How many people in your group?",
+      messagePlaceholder: "Your fitness goals or preferred programs (gym, hiking, running, etc.)",
+      selectLabel: "Programs of interest",
+      options: [
+        { value: "Gym Training", label: "Personalised gym training" },
+        { value: "Hiking Companion", label: "Bukhansan hiking companion" },
+        { value: "Running Companion", label: "Han River night run companion" },
+        { value: "Full Experience", label: "Interested in all programs" },
+        { value: "Learn More", label: "Just finding out more for now" },
+      ],
+      submit: "Send booking enquiry",
+      successTitle: "Enquiry received!",
+      successDesc: "We'll be in touch via WeChat within 24 hours to discuss your personalised companion plan.",
+    },
+    footer: {
+      links: [
+        { label: "About", href: "#about" },
+        { label: "Programs", href: "#services" },
+        { label: "Itinerary", href: "#itinerary" },
+        { label: "Book Now", href: "#contact" },
+      ],
+      book: "Book Now",
+      copyright: "© 2025 YEOUN. All rights reserved.",
+      tagline: "Dedicated Companion · Friend-like Comfort · Personalised for You",
+    },
+  },
+} as const;
+
+export type Translations = typeof translations.zh;
